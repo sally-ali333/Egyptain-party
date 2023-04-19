@@ -1,0 +1,177 @@
+:root {
+    --main-color: rgba(214, 46, 51, 0.6);
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*start home section*/
+#home {
+    background: url(../image/events-heavenly-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+#home .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*end home section*/
+
+/*start menu section*/
+aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 66666;
+}
+
+aside .openIcon {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+aside .menu {
+    background-color: #414658;
+    transition: 0.5s all;
+    position: relative;
+}
+
+
+#closeBtn {
+    cursor: pointer;
+    transition: 0.5s all;
+    position: absolute;
+    right: 20px;
+
+}
+
+.menu li {
+    padding: 20px 50px 20px 0px;
+}
+
+.menu a {
+    color: white;
+    font-size: 25px;
+    transition: 0.5s all;
+}
+
+.menu a:hover,
+#closeBtn:hover {
+    color: var(--main-color) !important;
+}
+
+
+/*end menu section*/
+
+
+/*start details section*/
+
+#details h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+}
+
+#details p {
+    padding: 10px;
+    background-color: #ccc;
+    margin-bottom: 0;
+    font-size: 14px;
+    display: none;
+}
+
+/*end details section*/
+
+
+
+/*start duration section*/
+#duration {
+    background: url(../image/invitation-2508607__340.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 0;
+}
+
+#duration::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#duration .content {
+    padding: 50px;
+    border: 1px solid white;
+
+}
+
+#duration .content h3 {
+    font-size: 18px;
+
+}
+
+
+/*end duration section*/
+
+
+/*start contact section*/
+#contact {
+    padding: 8rem 0;
+}
+
+#contact .header h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+
+#contact p {
+    color: #777;
+}
+
+#contact .email a {
+    color: var(--main-color);
+}
+
+#contact .socail-icons i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}
+
+#contact .socail-icons i:hover {
+    background-color: var(--main-color);
+}
+
+
+
+/*end contact section*/
